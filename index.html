@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Jogo de Cartas SUPER SUSTO ver.2.1</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<main class="main-content">
+	<section class="game-start">
+		<img src="https://dc584.4shared.com/img/4mp3tsf0ea/s24/17c0ae68cf0/super?async&rand=0.38326160170024504">
+	</section>
+	<section class="game-section">
+		<h2>Bem vindo(a) ao Super Susto, um jogo de cartas extremamente horripilante.</h2>
+		<h2>Sorteie uma carta, selecione o atributo e clique em JOGAR!</h2>
+		<button class="btn-draw" id="btnDraw" onclick="drawCard()">Sortear Carta</button>
+		<div class="cards">
+			<div class="card-in-play" id="playerCard"></div>
+			<div class="card-in-play" id="machineCard"></div>
+		</div>
+		<form id="gameOptions">
+			<div id="scoreboard"></div>
+			<div id="numberOfCards"></div>
+			<div class="options" id="options"></div>
+			<button type="button" class="btn-choose" id="btnChoose" onclick="play()">JOGAR!!!</button>
+			<button type="button" class="btn-next-round" id="btnNextRound" onclick="nextRound()">Próxima rodada</button>
+		</form>
+	</section>
+</main>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
